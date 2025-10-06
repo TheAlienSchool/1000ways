@@ -1,0 +1,2002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 Ways to Sit - A Gamelatron Sonic Sanctuary | San Francisco</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Experience San Francisco's most unique sound healing sanctuary. 1000 Ways to Sit features the Gamelatron - 44 autonomous bronze sculptures creating transformational sonic landscapes. September 21 - December 4, 2025 at Heron Arts.">
+    <meta name="keywords" content="1000 Ways to Sit, Gamelatron, sound healing, San Francisco, sonic sanctuary, meditation, sound bath, Heron Arts, contemplative practice, bronze instruments">
+    <meta name="author" content="1000 Ways to Sit">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://1000waystosit.com/">
+    <meta property="og:title" content="1000 Ways to Sit - A Gamelatron Sonic Sanctuary">
+    <meta property="og:description" content="Experience San Francisco's most unique sound healing sanctuary. 44 autonomous bronze sculptures create transformational sonic landscapes. September 21 - December 4, 2025.">
+    <meta property="og:image" content="https://1000waystosit.com/images/1000Ways_PractitionerBanner01.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://1000waystosit.com/">
+    <meta property="twitter:title" content="1000 Ways to Sit - A Gamelatron Sonic Sanctuary">
+    <meta property="twitter:description" content="Experience SF's most unique sound healing sanctuary. 44 autonomous bronze sculptures. September 21 - December 4, 2025.">
+    <meta property="twitter:image" content="https://1000waystosit.com/images/1000Ways_PractitionerBanner01.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    
+    <!-- Google Fonts - Brand Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px; /* Offset for fixed nav + breathing room */
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc0 100%);
+            color: #4a3728;
+            line-height: 1.6;
+        }
+
+        /* Typography System */
+        h1, h2, h3, .headline {
+            font-family: 'Archivo Black', sans-serif;
+            color: #8B4513;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 0.7em;
+        }
+
+        h3 {
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid #e0d5c0;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 1.5em;
+            color: #8B4513;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 600;
+            color: #8B4513;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #CD853F;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .countdown {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            border: 2px solid #CD853F;
+        }
+
+        .countdown-timer {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 2em;
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Enhanced Testimonials - Fixed Parallax Experience */
+        .testimonials {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            min-height: 500px;
+        }
+
+        .testimonial-carousel {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 4rem 2rem;
+            position: relative;
+            height: 400px;
+        }
+
+        .testimonial {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8em;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 1.2;
+            color: #8B4513;
+            opacity: 0;
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            max-width: 700px;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            transform: translate(-50%, -50%);
+            pointer-events: none;
+        }
+
+        .testimonial.active {
+            opacity: 1;
+            transform: translate(-50%, -50%) translateY(0);
+            pointer-events: auto;
+        }
+
+        .testimonial.next {
+            opacity: 0;
+            transform: translate(-50%, -50%) translateY(100px);
+        }
+
+        .testimonial.prev {
+            opacity: 0;
+            transform: translate(-50%, -50%) translateY(-100px);
+        }
+
+        .testimonial-attribution {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.4em;
+            color: #CD853F;
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .testimonial-progress {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 10;
+        }
+
+        .progress-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: rgba(139, 69, 19, 0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .progress-dot.active {
+            background: #8B4513;
+            transform: scale(1.3);
+        }
+
+        .progress-dot:hover {
+            background: rgba(139, 69, 19, 0.6);
+        }
+
+        /* Buttons */
+        .btn {
+            font-family: 'Nunito', sans-serif;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 1.1em;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            margin: 0.5rem;
+        }
+
+        .btn-primary {
+            background: #8B4513;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #A0522D;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: #CD853F;
+            color: white;
+        }
+
+        .btn-secondary:hover {
+            background: #D2691E;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #8B4513;
+            border: 2px solid #8B4513;
+        }
+
+        .btn-outline:hover {
+            background: #8B4513;
+            color: white;
+        }
+
+        /* This Week Section */
+        .this-week {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+        }
+
+        .experiences-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .experience-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            border: 2px solid #e0d5c0;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .experience-card:hover {
+            border-color: #CD853F;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .experience-day {
+            font-family: 'Archivo Black', sans-serif;
+            color: #CD853F;
+            font-size: 1.2em;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-title {
+            font-size: 1.3em;
+            margin-bottom: 1rem;
+        }
+
+        .experience-price {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 1.5em;
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+
+        .invite-widget {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #f0e6d2;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .invite-widget:hover {
+            background: #CD853F;
+            color: white;
+            transform: scale(1.1);
+        }
+
+        /* Floating Invitation Generator */
+        .floating-invite {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            z-index: 1000;
+        }
+
+        .invite-fab {
+            background: #8B4513;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5em;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .invite-fab:hover {
+            background: #A0522D;
+            transform: scale(1.1);
+        }
+
+        /* Invitation Generator Modal - Enhanced */
+        .generator-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(4px);
+            z-index: 2000;
+            align-items: center;
+            justify-content: center;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .generator-content {
+            background: linear-gradient(135deg, #f5f1e8 0%, #faf7f0 100%);
+            padding: 2.5rem;
+            border-radius: 25px;
+            max-width: 650px;
+            width: 90%;
+            max-height: 85vh;
+            overflow-y: auto;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: bounceIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .generator-title {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 2.2em;
+            color: #8B4513;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+            line-height: 1.2;
+        }
+
+        .generator-subtitle {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.1em;
+            color: #CD853F;
+            margin-bottom: 2rem;
+        }
+
+        .generator-step {
+            margin-bottom: 2.5rem;
+        }
+
+        .generator-step h3 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #8B4513;
+            margin-bottom: 1rem;
+        }
+
+        .generator-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .generator-option {
+            padding: 1.2rem;
+            background: white;
+            border: 2px solid #e0d5c0;
+            border-radius: 15px;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .generator-option::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(205, 133, 63, 0.1);
+            transform: translate(-50%, -50%);
+            transition: width 0.4s ease, height 0.4s ease;
+        }
+
+        .generator-option:hover::before {
+            width: 200%;
+            height: 200%;
+        }
+
+        .generator-option:hover {
+            border-color: #CD853F;
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 20px rgba(139, 69, 19, 0.15);
+        }
+
+        .generator-option.selected {
+            border-color: #8B4513;
+            background: linear-gradient(135deg, #f0e6d2 0%, #faf4e8 100%);
+            box-shadow: 0 4px 15px rgba(139, 69, 19, 0.2);
+            transform: scale(1.05);
+        }
+
+        .generator-option strong {
+            position: relative;
+            z-index: 1;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Practitioner Profiles Section */
+        .practitioners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .practitioner-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .practitioner-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(139, 69, 19, 0.2);
+        }
+
+        .practitioner-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .practitioner-info {
+            padding: 1.5rem;
+        }
+
+        .practitioner-name {
+            font-family: 'Archivo Black', sans-serif;
+            font-size: 1.3em;
+            color: #8B4513;
+            margin-bottom: 0.3rem;
+        }
+
+        .practitioner-session {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            color: #CD853F;
+            margin-bottom: 0.5rem;
+            font-size: 1.05em;
+        }
+
+        .practitioner-dates {
+            font-family: 'Nunito', sans-serif;
+            font-size: 0.95em;
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .practitioner-link {
+            display: inline-block;
+            color: #8B4513;
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .practitioner-link:hover {
+            border-color: #CD853F;
+        }
+
+        /* Environmental Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            aspect-ratio: 4/3;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(139, 69, 19, 0.25);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-item::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(180deg, transparent 0%, rgba(139, 69, 19, 0.3) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+        /* Lightbox Gallery Modal */
+        .lightbox-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 3000;
+            animation: fadeIn 0.3s ease;
+        }
+
+        .lightbox-overlay.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            animation: levitateIn 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        @keyframes levitateIn {
+            0% { 
+                opacity: 0; 
+                transform: scale(0.8) translateY(50px);
+            }
+            100% { 
+                opacity: 1; 
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .lightbox-image {
+            max-width: 100%;
+            max-height: 90vh;
+            object-fit: contain;
+            border-radius: 15px;
+            box-shadow: 0 25px 80px rgba(0, 0, 0, 0.5);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: -50px;
+            right: 0;
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            font-size: 1.8em;
+            color: #8B4513;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 300;
+        }
+
+        .lightbox-close:hover {
+            background: #CD853F;
+            color: white;
+            transform: rotate(90deg) scale(1.1);
+        }
+
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            color: #8B4513;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lightbox-nav:hover {
+            background: #CD853F;
+            color: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .lightbox-prev {
+            left: -70px;
+        }
+
+        .lightbox-next {
+            right: -70px;
+        }
+
+        .lightbox-counter {
+            position: absolute;
+            bottom: -45px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1em;
+            background: rgba(139, 69, 19, 0.8);
+            padding: 0.5rem 1.5rem;
+            border-radius: 25px;
+        }
+
+        .gallery-item {
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .lightbox-nav {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2em;
+            }
+
+            .lightbox-prev {
+                left: 10px;
+            }
+
+            .lightbox-next {
+                right: 10px;
+            }
+
+            .lightbox-close {
+                top: 10px;
+                right: 10px;
+            }
+
+            .lightbox-counter {
+                bottom: 10px;
+            }
+        }
+
+        .generated-message {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            min-height: 100px;
+            border: 2px solid #CD853F;
+        }
+
+        /* BULLETPROOF CONTAINER SYSTEM */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .section {
+            padding: 3rem 0;
+            width: 100%;
+        }
+
+        .section.hero {
+            padding: 6rem 0;
+        }
+
+        .section.compact {
+            padding: 2rem 0;
+        }
+
+        .section-content {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        .section-content-wide {
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* ELIMINATE ADDITIVE MARGINS */
+        .section * {
+            margin-top: 0;
+        }
+
+        .section *:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #8B4513;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Mobile Navigation */
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            color: #8B4513;
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .mobile-menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .mobile-menu-overlay.active {
+            display: block;
+            opacity: 1;
+        }
+
+        .mobile-nav {
+            display: none;
+            position: fixed;
+            top: 0;
+            right: -300px;
+            width: 300px;
+            height: 100%;
+            background: #f5f1e8;
+            z-index: 1000;
+            padding: 5rem 2rem 2rem;
+            box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+            transition: right 0.3s ease;
+            overflow-y: auto;
+        }
+
+        .mobile-nav.active {
+            right: 0;
+        }
+
+        .mobile-nav-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 2em;
+            color: #8B4513;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .mobile-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .mobile-nav ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-nav ul li a {
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #8B4513;
+            text-decoration: none;
+            display: block;
+            padding: 0.5rem 0;
+            transition: color 0.3s ease;
+        }
+
+        .mobile-nav ul li a:hover {
+            color: #CD853F;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: block;
+            }
+
+            .mobile-nav {
+                display: block;
+            }
+
+            .experiences-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .floating-invite {
+                bottom: 1rem;
+                right: 1rem;
+            }
+
+            .generator-content {
+                width: 95%;
+                padding: 1.5rem;
+            }
+        }
+
+        /* Animation Classes */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">1000 WAYS TO SIT</a>
+        <ul class="nav-links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#experiences">EXPERIENCES</a></li>
+            <li><a href="#practitioners">PRACTITIONERS</a></li>
+            <li><a href="#reserve">BOOK</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#support">SUPPORT</a></li>
+        </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Open menu">
+                ☰
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">×</button>
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#experiences">EXPERIENCES</a></li>
+            <li><a href="#practitioners">PRACTITIONERS</a></li>
+            <li><a href="#reserve">BOOK</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#support">SUPPORT</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Banner -->
+    <section class="hero-banner" style="padding: 0; margin: 0; margin-top: 80px;">
+        <div style="width: 100%; max-width: 100%; margin: 0;">
+            <img src="./images/1000Ways_PractitionerBanner01.png" alt="1000 Ways to Sit - A Gamelatron Sonic Sanctuary" style="width: 100%; height: auto; display: block; margin: 0;">
+        </div>
+    </section>
+
+    <!-- What Visitors Experience -->
+    <section class="section compact" style="padding: 3rem 0 5rem 0; min-height: 450px;">
+        <div class="container">
+            <div class="testimonials fade-in" id="testimonials-section">
+                <div class="testimonial-carousel">
+                    <h2 style="margin-bottom: 2rem; position: relative; z-index: 10;">What Visitors Experience</h2>
+                    <div class="testimonial active" data-index="0">"That was transformational."<div class="testimonial-attribution">— Sanctuary Visitor</div></div>
+                    <div class="testimonial" data-index="1">"I was in tears in there."<div class="testimonial-attribution">— Sanctuary Visitor</div></div>
+                    <div class="testimonial" data-index="2">"This is tremendously unique."<div class="testimonial-attribution">— Sanctuary Visitor</div></div>
+                    <div class="testimonial" data-index="3">"There is nothing else like it as far as I know."<div class="testimonial-attribution">— Sanctuary Visitor</div></div>
+                    <div class="testimonial" data-index="4">"An inner-active exhibit. A one of a kind installation."<div class="testimonial-attribution">— Sanctuary Visitor</div></div>
+                    
+                    <div class="testimonial-progress">
+                        <div class="progress-dot active"></div>
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                        <div class="progress-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserve & Invite Section -->
+    <section class="section compact" style="padding: 2rem 0;">
+        <div class="container">
+            <div class="section-content fade-in">
+                <p style="text-align: center; font-size: 1.15em; margin-bottom: 1.5rem; max-width: 650px; margin-left: auto; margin-right: auto; color: #4a3728;">
+                    Book your seat or invite your community to experience the sanctuary with you.
+                </p>
+                <div style="margin: 1rem 0;">
+                    <a href="#reserve" class="btn btn-primary" style="font-size: 1.2em; padding: 1rem 2.5rem;">BOOK YOUR EXPERIENCES</a>
+                    <button onclick="openGenerator()" class="btn btn-secondary" style="font-size: 1.2em; padding: 1rem 2.5rem;">INVITE FRIENDS</button>
+                </div>
+                <p style="text-align: center; font-size: 0.95em; margin-top: 1rem; font-style: italic; color: #8B4513;">
+                    The invitation tool creates custom messages for text, email, or social—making it effortless to share.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Countdown Section with Hero Background -->
+    <section class="countdown-hero" style="
+        position: relative;
+        padding: 6rem 0;
+        background-image: linear-gradient(rgba(245, 241, 232, 0.6), rgba(245, 241, 232, 0.6)), url('./images/hero_01.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: auto;
+    ">
+        <div class="container">
+            <div class="section-content fade-in">
+                <div class="countdown">
+                    <div class="countdown-timer" id="countdown">62 DAYS REMAINING</div>
+                    <p>Until the sanctuary closes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Environmental Gallery -->
+    <section class="section" style="padding: 4rem 0; background: rgba(255, 255, 255, 0.4);">
+        <div class="container">
+            <div class="section-content-wide fade-in">
+                <h2 style="margin-bottom: 1rem; text-align: center;">The Sanctuary Space</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #8B4513; font-style: italic; margin-bottom: 3rem;">
+                    A visual journey through our sonic environment
+                </p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item" onclick="openLightbox(0)">
+                        <img src="./images/Gallery_01.jpg" alt="Sanctuary Environment">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(1)">
+                        <img src="./images/Gallery_02.jpg" alt="Gamelatron Installation">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(2)">
+                        <img src="./images/Gallery_03.jpg" alt="Meditation Space">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(3)">
+                        <img src="./images/Gallery_04.jpg" alt="Contemplative Seating">
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox(4)">
+                        <img src="./images/Gallery_05.jpg" alt="Sonic Sanctuary">
+                    </div>
+                </div>
+                <p style="text-align: center; font-size: 0.9em; color: #8B4513; margin-top: 1.5rem; font-style: italic;">
+                    Click any image to view full size
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- This Week's Experiences -->
+    <section id="experiences" class="section">
+        <div class="container">
+            <div class="this-week fade-in">
+                <div class="section-content-wide">
+                    <h2 style="margin-bottom: 3rem;">This Week's Sanctuary Experiences</h2>
+                    
+                    <div class="experiences-grid">
+                        <div class="experience-card">
+                            <div class="invite-widget" onclick="openGenerator('creative-steeping')" title="Invite friends to this experience">📧</div>
+                            <div class="experience-day">TUESDAY</div>
+                            <h3 class="experience-title">Tea & Self-Steeping</h3>
+                            <p>A ceremonial approach to tea preparation within the sonic landscape. Mindful steeping becomes meditation as bronze sculptures create harmonic resonance.</p>
+                            <div class="experience-price">$50</div>
+                            <a href="https://bit.ly/1000waystosit" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="invite-widget" onclick="openGenerator('visualization-arts')" title="Invite friends to this experience">📧</div>
+                            <div class="experience-day">WEDNESDAY</div>
+                            <h3 class="experience-title">Visualization Arts</h3>
+                            <p>Guided imagery practices enhanced by autonomous sound frequencies. Inner landscapes emerge through sonic guidance and contemplative sitting.</p>
+                            <div class="experience-price">$50</div>
+                            <a href="https://bit.ly/1000waystosit" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="invite-widget" onclick="openGenerator('open-sit')" title="Invite friends to this experience">📧</div>
+                            <div class="experience-day">WEDNESDAY</div>
+                            <h3 class="experience-title">Open Sit</h3>
+                            <p>Drop-in meditation and sound immersion. No guidance, just you and the autonomous bronze sculptures creating unique soundscapes.</p>
+                            <div class="experience-price">$22</div>
+                            <div style="font-size: 0.9em; margin-bottom: 1rem;">12-6pm Daily Access</div>
+                            <a href="https://bit.ly/1000waystosit" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="invite-widget" onclick="openGenerator('movement-somatic')" title="Invite friends to this experience">📧</div>
+                            <div class="experience-day">THURSDAY</div>
+                            <h3 class="experience-title">Sonic Somatics</h3>
+                            <p>Body-based practices within the sound field. Movement and stillness dialogue with bronze frequencies for embodied awareness.</p>
+                            <div class="experience-price">$50</div>
+                            <a href="https://bit.ly/1000waystosit" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="invite-widget" onclick="openGenerator('curator-nights')" title="Invite friends to this experience">📧</div>
+                            <div class="experience-day">SATURDAY</div>
+                            <h3 class="experience-title">Curator Nights</h3>
+                            <p>Evening gatherings where Bay Area artists collaborate with the Gamelatron. Meditative hangs with creative community.</p>
+                            <div class="experience-price">$35</div>
+                            <div style="font-size: 0.9em; margin-bottom: 1rem;">6-9pm</div>
+                            <a href="https://bit.ly/1000waystosit" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="invite-widget" onclick="openGenerator('gamelatron-talks')" title="Invite friends to this experience">📧</div>
+                            <div class="experience-day">MONDAY</div>
+                            <h3 class="experience-title">Gamelatron Talks</h3>
+                            <p>Audiobooks and discussion within the sonic sanctuary. Wisdom literature enhanced by autonomous bronze frequencies.</p>
+                            <div class="experience-price">$35</div>
+                            <div style="font-size: 0.9em; margin-bottom: 1rem;">6-9pm</div>
+                            <a href="https://bit.ly/1000waystosit" class="btn btn-primary">BOOK NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Meet Your Practitioners -->
+    <section id="practitioners" class="section" style="background: rgba(255, 255, 255, 0.3); padding: 5rem 0;">
+        <div class="container">
+            <div class="section-content-wide fade-in">
+                <h2 style="margin-bottom: 1rem; text-align: center;">Meet Your Guides</h2>
+                <p style="text-align: center; font-size: 1.2em; color: #8B4513; font-style: italic; margin-bottom: 3rem;">
+                    Expert practitioners who hold sacred space for your journey
+                </p>
+                
+                <div class="practitioners-grid">
+                    <!-- Kamau Zuberi Akabueze -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_KzA.png" alt="Kamau Zuberi Akabueze" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Kamau Zuberi Akabueze</div>
+                            <div class="practitioner-session">Creative Steeping</div>
+                            <div class="practitioner-dates">Tuesdays | Oct 7 - Dec 3</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Buckminster Barrett -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_BF.png" alt="Buckminster Barrett" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Buckminster Barrett</div>
+                            <div class="practitioner-session">Creative Steeping</div>
+                            <div class="practitioner-dates">Tuesdays | Oct 7 - Dec 3</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Jeanine Cliffe -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_JC.png" alt="Jeanine Cliffe" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Jeanine Cliffe</div>
+                            <div class="practitioner-session">Visualization Arts</div>
+                            <div class="practitioner-dates">Wednesdays | Oct 8 - Nov 19</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Michelle Nayeli -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_MN.png" alt="Michelle Nayeli" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Michelle Nayeli</div>
+                            <div class="practitioner-session">Somatic Rewilding</div>
+                            <div class="practitioner-dates">Oct 16, 30 | Nov 13</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Rebecca Blondell -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_RB.png" alt="Rebecca Blondell" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Rebecca Blondell</div>
+                            <div class="practitioner-session">Transformational Shift</div>
+                            <div class="practitioner-dates">Thursday | October 23</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Kinjal Shah -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_KS.png" alt="Kinjal Shah" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Kinjal Shah</div>
+                            <div class="practitioner-session">Pratyahara: Sensing Stillness</div>
+                            <div class="practitioner-dates">Sunday | October 26</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Nkechi Njaka + Tauwoo -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_NT.png" alt="Nkechi Njaka + Tauwoo" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Nkechi + Tauwoo</div>
+                            <div class="practitioner-session">The Art of RESONANCE</div>
+                            <div class="practitioner-dates">Thursday | November 6</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- Sarah Koh -->
+                    <div class="practitioner-card">
+                        <img src="./images/Practitioner_SK.png" alt="Sarah Koh" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Sarah Koh</div>
+                            <div class="practitioner-session">Heart Alchemy & Sacred Space</div>
+                            <div class="practitioner-dates">Thursday | November 20</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+
+                    <!-- AL Placeholder - will be revealed when image is copied -->
+                    <div class="practitioner-card" style="display: none;" id="practitioner-al">
+                        <img src="./images/Practitioner_AL.png" alt="Practitioner AL" class="practitioner-image">
+                        <div class="practitioner-info">
+                            <div class="practitioner-name">Coming Soon</div>
+                            <div class="practitioner-session">Special Experience</div>
+                            <div class="practitioner-dates">Date TBA</div>
+                            <a href="https://bit.ly/1000waystosit" class="practitioner-link">Book Experience →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reserve Your Seats -->
+    <section id="reserve" class="section">
+        <div class="container">
+            <div style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 3rem 2rem;">
+                <div class="section-content fade-in">
+                    <h2 style="margin-bottom: 2rem;">Book Your Experiences</h2>
+                    <p style="font-size: 1.2em; margin-bottom: 2rem;">All bookings are handled through our Eventbrite page. Choose your experience and secure your place in the sanctuary.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <a href="https://bit.ly/1000waystosit" class="btn btn-primary" style="font-size: 1.3em; padding: 1.5rem 3rem;">BOOK YOUR EXPERIENCES</a>
+                    </div>
+                    
+                    <p style="margin-top: 2rem;">
+                        <button onclick="openGenerator()" class="btn btn-outline">Invite Friends First</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Show Banner -->
+    <section class="show-banner" style="padding: 0; margin: 0;">
+        <div style="width: 100%; max-width: 100%; margin: 0;">
+            <img src="./images/1000Ways_ShowBanner01.png" alt="1000 Ways to Sit - Festival of Stillness" style="width: 100%; height: auto; display: block; margin: 0;">
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-content fade-in">
+                <h2 style="margin-bottom: 3rem;">About the Sanctuary</h2>
+                <p style="font-size: 1.2em; margin-bottom: 2rem;">
+                    The Gamelatron is a globally recognized sound art installation featuring autonomous bronze sculptures that create unique sonic landscapes. 1000 Ways to Sit transforms this technology into a contemplative sanctuary for San Francisco's conscious community.
+                </p>
+                
+                <p style="font-size: 1.1em; margin-bottom: 2rem;">
+                    Located at Heron Arts, this 10-week festival of stillness offers multiple pathways into deep listening, meditation, and community connection. Each visit creates soundscapes that have never existed before and will never exist again.
+                </p>
+                
+                <div style="margin: 2rem 0;">
+                    <button onclick="openGenerator()" class="btn btn-secondary">Share This Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Instruments Section -->
+    <section class="section compact" style="background: rgba(255, 255, 255, 0.5); padding: 4rem 0;">
+        <div class="container">
+            <div class="section-content fade-in">
+                <h2 style="margin-bottom: 3rem;">The Forms You Are Sitting With</h2>
+                
+                <!-- Gamelatron Via Oro -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="color: #CD853F; margin-bottom: 1rem;">Gamelatron Via Oro</h3>
+                    <p style="font-size: 1.1em; font-style: italic; margin-bottom: 1rem;">The Way of Gold</p>
+                    <p style="font-size: 1.05em; margin-bottom: 1.5rem;">
+                        44 bronze and steel instruments mounted in a U-shaped embrace around you. This is the voice of the sanctuary. The algorithm that composes these sounds ranges from barely audible whispers to communal resonance, responding to your presence in the space.
+                    </p>
+                </div>
+
+                <!-- Body Phones -->
+                <div style="margin-bottom: 4rem;">
+                    <h3 style="color: #CD853F; margin-bottom: 1rem;">Body Phones 38Hz</h3>
+                    <p style="font-size: 1.1em; font-style: italic; margin-bottom: 1rem;">Headphones for Your Whole Body</p>
+                    <p style="font-size: 1.05em; margin-bottom: 1.5rem;">
+                        Two 5-foot gongs tuned to the frequency of deep cellular calm. When that gong strikes at 38 Hz, something changes in your body at the cellular level. This frequency resonates with patterns in your nervous system—the same states that occur when you feel deeply calm or speak your truth.
+                    </p>
+                </div>
+
+                <!-- Gamelatron Amoghasi -->
+                <div style="margin-bottom: 3rem;">
+                    <h3 style="color: #CD853F; margin-bottom: 1rem;">Gamelatron Amoghasi</h3>
+                    <p style="font-size: 1.1em; font-style: italic; margin-bottom: 1rem;">The Unfailing Accomplisher</p>
+                    <p style="font-size: 1.05em; margin-bottom: 1.5rem;">
+                        8 hand-forged bronze gongs, each a unique voice in the sonic conversation. Amoghasi means "the unfailing accomplisher"—and indeed, these gongs accomplish what words cannot: direct transmission of vibrational truth to your nervous system.
+                    </p>
+                </div>
+
+                <p style="font-size: 1.1em; font-style: italic; color: #8B4513; margin-top: 2rem;">
+                    "Your presence is an essential part of how this experience functions. The acoustic space you're sitting in is being co-created by your presence, and their presence, and the presence of this intentional sonic sanctuary."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience IS Support Section -->
+    <section id="support" class="section">
+        <div class="container">
+            <div style="background: rgba(255, 255, 255, 0.9); border-radius: 20px; padding: 3rem 2rem;">
+                <div class="section-content fade-in">
+                    <h2 style="margin-bottom: 2rem;">Your Presence IS the Support</h2>
+                    <p style="font-size: 1.3em; margin-bottom: 1.5rem; font-style: italic; color: #8B4513;">
+                        "The most vital support you can offer this sanctuary is your presence."
+                    </p>
+                    <p style="font-size: 1.1em; margin-bottom: 2rem;">
+                        Every person who sits intentionally, who breathes with awareness, who notices the connection between gong strike and heartbeat is proving something important: that spaces can be designed to support human flourishing rather than extract from it.
+                    </p>
+                    <p style="font-size: 1.1em; margin-bottom: 2rem;">
+                        The Gamelatron responds to your presence. Your vibration becomes part of the composition. By experiencing the sanctuary, you become living proof of its value—and that experiential support is what sustains this offering for San Francisco's conscious community.
+                    </p>
+                    
+                    <div style="margin: 2.5rem 0;">
+                        <a href="#reserve" class="btn btn-primary" style="font-size: 1.2em; padding: 1.2rem 2.5rem;">RESERVE YOUR EXPERIENCE</a>
+                    </div>
+                    
+                    <p style="margin-top: 2rem; font-size: 0.95em; color: #8B4513;">
+                        <strong>Want to contribute financially?</strong> Open Sit sessions on Eventbrite include a donation option where you can offer whatever amount feels valuable to the project. Your presence + your offering = the sustainability of this sacred space.
+                    </p>
+                    
+                    <p style="margin-top: 1.5rem;">
+                        <button onclick="openGenerator()" class="btn btn-outline">Invite Others to Experience</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="color: white; margin-bottom: 1rem;">1000 Ways to Sit</h3>
+            <p>A Gamelatron Sonic Sanctuary</p>
+            <p>Heron Arts | 7 Heron Street, San Francisco</p>
+            <p>September 21 - December 4, 2025</p>
+            
+            <div style="margin: 2rem 0;">
+                <a href="https://bit.ly/1000waystosit" class="btn btn-outline" style="color: white; border-color: white;">RESERVE YOUR SEATS</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Invitation Button -->
+    <div class="floating-invite">
+        <button class="invite-fab" onclick="openGenerator()" title="Invite Friends">📧</button>
+    </div>
+
+    <!-- Gallery Lightbox Modal -->
+    <div id="lightboxOverlay" class="lightbox-overlay" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close lightbox">×</button>
+            <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous image">‹</button>
+            <img id="lightboxImage" src="" alt="" class="lightbox-image">
+            <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next image">›</button>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 5</div>
+        </div>
+    </div>
+
+    <!-- Invitation Generator Modal -->
+    <div id="generatorModal" class="generator-modal">
+        <div class="generator-content">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2rem;">
+                <div>
+                    <h2 class="generator-title">Share the<br>Sanctuary</h2>
+                    <p class="generator-subtitle">Invite friends to sit with intention</p>
+                </div>
+                <button onclick="closeGenerator()" style="background: none; border: none; font-size: 2em; cursor: pointer; color: #8B4513; transition: transform 0.2s ease;" onmouseover="this.style.transform='rotate(90deg)'" onmouseout="this.style.transform='rotate(0deg)'">✕</button>
+            </div>
+            
+            <div class="generator-step">
+                <h3>Step 1: Choose Experience</h3>
+                <div class="generator-options" id="experienceOptions">
+                    <div class="generator-option" data-experience="open-sit">
+                        <strong>Open Sit</strong><br>
+                        Wed-Sat 12-6pm<br>
+                        $22
+                    </div>
+                    <div class="generator-option" data-experience="creative-steeping">
+                        <strong>Tea & Self-Steeping</strong><br>
+                        Tuesday<br>
+                        $50
+                    </div>
+                    <div class="generator-option" data-experience="visualization-arts">
+                        <strong>Visualization Arts</strong><br>
+                        Wednesday<br>
+                        $50
+                    </div>
+                    <div class="generator-option" data-experience="movement-somatic">
+                        <strong>Sonic Somatics</strong><br>
+                        Thursday<br>
+                        $50
+                    </div>
+                    <div class="generator-option" data-experience="curator-nights">
+                        <strong>Curator Nights</strong><br>
+                        Saturday 6-9pm<br>
+                        $35
+                    </div>
+                    <div class="generator-option" data-experience="gamelatron-talks">
+                        <strong>Gamelatron Talks</strong><br>
+                        Monday 6-9pm<br>
+                        $35
+                    </div>
+                </div>
+            </div>
+            
+            <div class="generator-step">
+                <h3>Step 2: Choose Format</h3>
+                <div class="generator-options" id="formatOptions">
+                    <div class="generator-option selected" data-format="text">
+                        <strong>Text Message</strong><br>
+                        Quick & Personal
+                    </div>
+                    <div class="generator-option" data-format="email">
+                        <strong>Email</strong><br>
+                        Full Details
+                    </div>
+                    <div class="generator-option" data-format="social">
+                        <strong>Social Media</strong><br>
+                        Shareable Post
+                    </div>
+                </div>
+            </div>
+            
+            <div class="generator-step">
+                <h3>Step 3: Choose Tone</h3>
+                <div class="generator-options" id="toneOptions">
+                    <div class="generator-option selected" data-tone="testimonial">
+                        <strong>Testimonial</strong><br>
+                        Real visitor quotes
+                    </div>
+                    <div class="generator-option" data-tone="curiosity">
+                        <strong>Curiosity</strong><br>
+                        Intrigue building
+                    </div>
+                    <div class="generator-option" data-tone="direct">
+                        <strong>Direct</strong><br>
+                        Clear invitation
+                    </div>
+                </div>
+            </div>
+            
+            <div class="generator-step">
+                <h3>Your Generated Invitation</h3>
+                <div class="generated-message" id="generatedMessage">
+                    Select an experience above to generate your invitation message.
+                </div>
+                
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+                    <button onclick="copyMessage()" class="btn btn-primary">📋 Copy Message</button>
+                    <button onclick="generateNew()" class="btn btn-secondary">🔄 Generate New</button>
+                    <button onclick="clearGenerator()" class="btn btn-outline">🗑️ Clear & Start Over</button>
+                    <a href="https://bit.ly/1000waystosit" class="btn btn-outline">🎫 Book on Eventbrite</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ===== MOBILE NAVIGATION =====
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileNavClose = document.getElementById('mobileNavClose');
+            const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav a');
+
+            // Open mobile menu
+            mobileMenuToggle.addEventListener('click', function() {
+                mobileNav.classList.add('active');
+                mobileMenuOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent scrolling when menu is open
+            });
+
+            // Close mobile menu
+            function closeMobileMenu() {
+                mobileNav.classList.remove('active');
+                mobileMenuOverlay.classList.remove('active');
+                document.body.style.overflow = ''; // Restore scrolling
+            }
+
+            mobileNavClose.addEventListener('click', closeMobileMenu);
+            mobileMenuOverlay.addEventListener('click', closeMobileMenu);
+
+            // Close menu when clicking a link
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+        });
+
+        // ===== DYNAMIC COUNTDOWN TIMER =====
+        function updateCountdown() {
+            const eventDate = new Date('December 4, 2025 23:59:59').getTime();
+            const now = new Date().getTime();
+            const distance = eventDate - now;
+
+            if (distance < 0) {
+                document.getElementById('countdown').innerHTML = 'THE SANCTUARY HAS CLOSED';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+            // Update the countdown display
+            const countdownElement = document.getElementById('countdown');
+            if (countdownElement) {
+                if (days > 0) {
+                    countdownElement.innerHTML = days + ' DAY' + (days !== 1 ? 'S' : '') + ' REMAINING';
+                } else {
+                    countdownElement.innerHTML = hours + ' HOUR' + (hours !== 1 ? 'S' : '') + ' REMAINING';
+                }
+            }
+        }
+
+        // Update countdown on load and every hour
+        updateCountdown();
+        setInterval(updateCountdown, 3600000); // Update every hour
+
+        // ===== TESTIMONIALS CAROUSEL =====
+        // Fixed Parallax Testimonials Experience
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        const progressDots = document.querySelectorAll('.progress-dot');
+        const testimonialsSection = document.getElementById('testimonials-section');
+        let scrollTimeout;
+        let isScrolling = false;
+        let lastScrollY = 0;
+
+        function updateTestimonial(index) {
+            // Clear all classes first
+            testimonials.forEach((testimonial, i) => {
+                testimonial.classList.remove('active', 'next', 'prev');
+                progressDots[i].classList.remove('active');
+            });
+            
+            // Set the active testimonial
+            testimonials[index].classList.add('active');
+            progressDots[index].classList.add('active');
+            
+            // Set next and previous states for smooth transitions
+            testimonials.forEach((testimonial, i) => {
+                if (i > index) {
+                    testimonial.classList.add('next');
+                } else if (i < index) {
+                    testimonial.classList.add('prev');
+                }
+            });
+            
+            currentTestimonial = index;
+        }
+
+        function handleTestimonialScroll() {
+            if (!testimonialsSection) return;
+            
+            const rect = testimonialsSection.getBoundingClientRect();
+            const sectionHeight = rect.height;
+            const sectionTop = rect.top;
+            const windowHeight = window.innerHeight;
+            const currentScrollY = window.scrollY;
+            
+            // Check if section is in viewport
+            if (sectionTop < windowHeight * 0.8 && sectionTop + sectionHeight > windowHeight * 0.2) {
+                // Calculate scroll progress through the section
+                const sectionProgress = Math.max(0, Math.min(1, 
+                    (windowHeight * 0.6 - sectionTop) / (sectionHeight + windowHeight * 0.4)
+                ));
+                
+                // Map scroll progress to testimonial index
+                const testimonialIndex = Math.floor(sectionProgress * testimonials.length);
+                const clampedIndex = Math.max(0, Math.min(testimonials.length - 1, testimonialIndex));
+                
+                // Only update if index changed
+                if (clampedIndex !== currentTestimonial) {
+                    updateTestimonial(clampedIndex);
+                }
+                
+                isScrolling = true;
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(() => {
+                    isScrolling = false;
+                }, 200);
+            }
+            
+            lastScrollY = currentScrollY;
+        }
+
+        // Auto-advance when not scrolling
+        function autoAdvanceTestimonials() {
+            if (!isScrolling) {
+                const nextIndex = (currentTestimonial + 1) % testimonials.length;
+                updateTestimonial(nextIndex);
+            }
+        }
+
+        // Initialize testimonials
+        if (testimonialsSection && testimonials.length > 0) {
+            // Set initial state
+            updateTestimonial(0);
+            
+            // Add scroll listener with throttling
+            let ticking = false;
+            window.addEventListener('scroll', () => {
+                if (!ticking) {
+                    requestAnimationFrame(() => {
+                        handleTestimonialScroll();
+                        ticking = false;
+                    });
+                    ticking = true;
+                }
+            }, { passive: true });
+            
+            // Auto-advance every 8 seconds for contemplative pacing
+            setInterval(autoAdvanceTestimonials, 8000);
+            
+            // Click on progress dots to navigate
+            progressDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    updateTestimonial(index);
+                    isScrolling = true;
+                    clearTimeout(scrollTimeout);
+                    scrollTimeout = setTimeout(() => {
+                        isScrolling = false;
+                    }, 1000);
+                });
+            });
+        }
+
+        // Scroll Animation
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.fade-in');
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+        
+        window.addEventListener('scroll', animateOnScroll);
+        animateOnScroll(); // Run on load
+
+        // ===== GALLERY LIGHTBOX =====
+        const galleryImages = [
+            { src: './images/Gallery_01.jpg', alt: 'Sanctuary Environment' },
+            { src: './images/Gallery_02.jpg', alt: 'Gamelatron Installation' },
+            { src: './images/Gallery_03.jpg', alt: 'Meditation Space' },
+            { src: './images/Gallery_04.jpg', alt: 'Contemplative Seating' },
+            { src: './images/Gallery_05.jpg', alt: 'Sonic Sanctuary' }
+        ];
+
+        let currentLightboxIndex = 0;
+
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            const lightboxOverlay = document.getElementById('lightboxOverlay');
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxCounter = document.getElementById('lightboxCounter');
+            
+            lightboxImage.src = galleryImages[index].src;
+            lightboxImage.alt = galleryImages[index].alt;
+            lightboxCounter.textContent = `${index + 1} / ${galleryImages.length}`;
+            
+            lightboxOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+        }
+
+        function closeLightbox() {
+            const lightboxOverlay = document.getElementById('lightboxOverlay');
+            lightboxOverlay.classList.remove('active');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        function navigateLightbox(direction) {
+            currentLightboxIndex += direction;
+            
+            // Loop around if at start/end
+            if (currentLightboxIndex < 0) {
+                currentLightboxIndex = galleryImages.length - 1;
+            } else if (currentLightboxIndex >= galleryImages.length) {
+                currentLightboxIndex = 0;
+            }
+            
+            const lightboxImage = document.getElementById('lightboxImage');
+            const lightboxCounter = document.getElementById('lightboxCounter');
+            
+            lightboxImage.src = galleryImages[currentLightboxIndex].src;
+            lightboxImage.alt = galleryImages[currentLightboxIndex].alt;
+            lightboxCounter.textContent = `${currentLightboxIndex + 1} / ${galleryImages.length}`;
+        }
+
+        // Keyboard navigation for lightbox
+        document.addEventListener('keydown', function(e) {
+            const lightboxOverlay = document.getElementById('lightboxOverlay');
+            if (lightboxOverlay.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                } else if (e.key === 'ArrowLeft') {
+                    navigateLightbox(-1);
+                } else if (e.key === 'ArrowRight') {
+                    navigateLightbox(1);
+                }
+            }
+        });
+
+        // Invitation Generator
+        let currentExperience = null;
+        let currentFormat = 'text';
+        let currentTone = 'testimonial';
+
+        const messageTemplates = {
+            'open-sit': {
+                text: {
+                    testimonial: '"That was transformational" - actual visitor quote from 1000 Ways to Sit. SF\'s most unique sound experience. Real sonic sanctuary with autonomous bronze sculptures. Open Sit Wed-Sat 12-6pm, $22. Want to check it out? bit.ly/1000waystit',
+                    curiosity: 'Found something tremendously unique in SF... autonomous bronze sculptures create soundscapes that have never existed before. Open Sit Wed-Sat 12-6pm, $22. Curious? bit.ly/1000waystit',
+                    direct: 'Want to try something different? 1000 Ways to Sit - sonic sanctuary with autonomous sound sculptures. Open Sit Wed-Sat 12-6pm, $22. Let\'s go together? bit.ly/1000waystit'
+                },
+                email: {
+                    testimonial: 'Subject: "That was transformational" - Found SF\'s hidden gem\n\nHey! I discovered this incredible place called 1000 Ways to Sit. A visitor literally said "That was transformational" after experiencing it.\n\nIt\'s a sonic sanctuary with autonomous bronze sculptures that create unique soundscapes. Open Sit sessions run Wed-Sat 12-6pm for $22.\n\nWant to experience it together? bit.ly/1000waystit',
+                    curiosity: 'Subject: Found something tremendously unique in SF\n\nI stumbled upon this fascinating place - 1000 Ways to Sit. It\'s described as "tremendously unique" by visitors, and I can see why.\n\nAutonomous bronze sculptures create soundscapes that have never existed before. Open Sit sessions Wed-Sat 12-6pm, $22.\n\nCurious to explore it together? bit.ly/1000waystit',
+                    direct: 'Subject: Want to try something different this week?\n\n1000 Ways to Sit is a sonic sanctuary in SF with autonomous sound sculptures. Perfect for meditation and deep listening.\n\nOpen Sit sessions: Wed-Sat 12-6pm, $22\n\nLet\'s go together? bit.ly/1000waystit'
+                },
+                social: {
+                    testimonial: '🎵 "That was transformational" 🎵\n\nDiscovered 1000 Ways to Sit - SF\'s sonic sanctuary with autonomous bronze sculptures. Open Sit Wed-Sat 12-6pm, $22.\n\n#SoundHealing #SanFrancisco #Meditation\nbit.ly/1000waystit',
+                    curiosity: '🤔 "Tremendously unique" - that\'s how visitors describe 1000 Ways to Sit\n\nAutonomous bronze sculptures create soundscapes that have never existed before. Open Sit Wed-Sat 12-6pm, $22.\n\nbit.ly/1000waystit',
+                    direct: '🧘‍♀️ Ready for something different?\n\n1000 Ways to Sit - sonic sanctuary in SF. Open Sit sessions Wed-Sat 12-6pm, $22.\n\nWho\'s in? bit.ly/1000waystit'
+                }
+            },
+            'creative-steeping': {
+                text: {
+                    testimonial: '"I was in tears in there" - visitor experience at 1000 Ways to Sit. Tuesday Tea & Self-Steeping ceremony with autonomous sound sculptures, $50. Transformational tea practice. bit.ly/1000waystit',
+                    curiosity: 'Tea ceremony meets sound art... Tuesday Tea & Self-Steeping at 1000 Ways to Sit. Autonomous bronze sculptures create harmonic resonance during mindful steeping, $50. bit.ly/1000waystit',
+                    direct: 'Tuesday Tea & Self-Steeping at 1000 Ways to Sit. Ceremonial tea practice with autonomous sound sculptures, $50. Want to join me? bit.ly/1000waystit'
+                },
+                email: {
+                    testimonial: 'Subject: "I was in tears in there" - Tea ceremony experience\n\nA visitor shared this powerful response to 1000 Ways to Sit. The Tuesday Tea & Self-Steeping session combines ceremonial tea preparation with autonomous bronze sculptures creating harmonic resonance.\n\nIt\'s a transformational approach to mindful steeping, $50.\n\nWould you like to experience it together? bit.ly/1000waystit',
+                    curiosity: 'Subject: Tea ceremony meets sound art\n\nDiscovered this fascinating combination - Tuesday Tea & Self-Steeping at 1000 Ways to Sit. Ceremonial tea preparation enhanced by autonomous bronze sculptures creating harmonic resonance.\n\nMindful steeping becomes meditation, $50.\n\nCurious to try it together? bit.ly/1000waystit',
+                    direct: 'Subject: Tuesday tea ceremony invitation\n\nTea & Self-Steeping at 1000 Ways to Sit - ceremonial tea practice with autonomous sound sculptures. Tuesday sessions, $50.\n\nWant to join me for this unique experience? bit.ly/1000waystit'
+                },
+                social: {
+                    testimonial: '🍵 "I was in tears in there" 🍵\n\nTuesday Tea & Self-Steeping at 1000 Ways to Sit. Ceremonial tea meets autonomous sound sculptures, $50.\n\n#TeaCeremony #SoundHealing #Mindfulness\nbit.ly/1000waystit',
+                    curiosity: '🍵 Tea ceremony meets sound art 🎵\n\nTuesday Tea & Self-Steeping at 1000 Ways to Sit. Autonomous bronze sculptures create harmonic resonance during mindful steeping, $50.\n\nbit.ly/1000waystit',
+                    direct: '🍵 Tuesday Tea & Self-Steeping 🍵\n\n1000 Ways to Sit - ceremonial tea practice with autonomous sound sculptures, $50.\n\nWho\'s joining? bit.ly/1000waystit'
+                }
+            },
+            'visualization-arts': {
+                text: {
+                    testimonial: '"This is tremendously unique" - Wednesday Visualization Arts at 1000 Ways to Sit. Guided imagery with autonomous sound frequencies, $50. Inner landscapes emerge through sonic guidance. bit.ly/1000waystit',
+                    curiosity: 'Guided imagery meets autonomous sound... Wednesday Visualization Arts at 1000 Ways to Sit. Inner landscapes emerge through sonic guidance, $50. bit.ly/1000waystit',
+                    direct: 'Wednesday Visualization Arts at 1000 Ways to Sit. Guided imagery with autonomous sound frequencies, $50. Want to explore inner landscapes together? bit.ly/1000waystit'
+                },
+                email: {
+                    testimonial: 'Subject: "This is tremendously unique" - Visualization Arts\n\nA visitor\'s response to Wednesday Visualization Arts at 1000 Ways to Sit. Guided imagery practices enhanced by autonomous sound frequencies create profound inner experiences.\n\nInner landscapes emerge through sonic guidance, $50.\n\nWould you like to explore this together? bit.ly/1000waystit',
+                    curiosity: 'Subject: Guided imagery meets autonomous sound\n\nWednesday Visualization Arts at 1000 Ways to Sit combines guided imagery with autonomous bronze sculptures creating sound frequencies.\n\nInner landscapes emerge through sonic guidance, $50.\n\nCurious to experience it together? bit.ly/1000waystit',
+                    direct: 'Subject: Wednesday Visualization Arts invitation\n\nVisualization Arts at 1000 Ways to Sit - guided imagery practices enhanced by autonomous sound frequencies. Wednesday sessions, $50.\n\nWant to explore inner landscapes together? bit.ly/1000waystit'
+                },
+                social: {
+                    testimonial: '🧠 "This is tremendously unique" 🧠\n\nWednesday Visualization Arts at 1000 Ways to Sit. Guided imagery with autonomous sound frequencies, $50.\n\n#Visualization #SoundHealing #InnerJourney\nbit.ly/1000waystit',
+                    curiosity: '🧠 Guided imagery meets autonomous sound 🎵\n\nWednesday Visualization Arts at 1000 Ways to Sit. Inner landscapes emerge through sonic guidance, $50.\n\nbit.ly/1000waystit',
+                    direct: '🧠 Wednesday Visualization Arts 🧠\n\n1000 Ways to Sit - guided imagery with autonomous sound frequencies, $50.\n\nWho\'s exploring? bit.ly/1000waystit'
+                }
+            },
+            'movement-somatic': {
+                text: {
+                    testimonial: '"An inner-active exhibit" - Thursday Sonic Somatics at 1000 Ways to Sit. Body-based practices with bronze frequencies for embodied awareness, $50. Movement and stillness dialogue. bit.ly/1000waystit',
+                    curiosity: 'Body-based practices meet autonomous sound... Thursday Sonic Somatics at 1000 Ways to Sit. Movement and stillness dialogue with bronze frequencies, $50. bit.ly/1000waystit',
+                    direct: 'Thursday Sonic Somatics at 1000 Ways to Sit. Body-based practices with autonomous sound frequencies, $50. Want to explore embodied awareness together? bit.ly/1000waystit'
+                },
+                email: {
+                    testimonial: 'Subject: "An inner-active exhibit" - Sonic Somatics\n\nA visitor described 1000 Ways to Sit as "an inner-active exhibit." Thursday Sonic Somatics combines body-based practices with autonomous bronze frequencies.\n\nMovement and stillness dialogue for embodied awareness, $50.\n\nWould you like to experience this together? bit.ly/1000waystit',
+                    curiosity: 'Subject: Body-based practices meet autonomous sound\n\nThursday Sonic Somatics at 1000 Ways to Sit. Body-based practices within the sound field created by autonomous bronze sculptures.\n\nMovement and stillness dialogue with frequencies, $50.\n\nCurious to explore together? bit.ly/1000waystit',
+                    direct: 'Subject: Thursday Sonic Somatics invitation\n\nSonic Somatics at 1000 Ways to Sit - body-based practices enhanced by autonomous sound frequencies. Thursday sessions, $50.\n\nWant to explore embodied awareness together? bit.ly/1000waystit'
+                },
+                social: {
+                    testimonial: '🕺 "An inner-active exhibit" 🕺\n\nThursday Sonic Somatics at 1000 Ways to Sit. Body-based practices with bronze frequencies, $50.\n\n#SomaticPractice #SoundHealing #EmbodiedAwareness\nbit.ly/1000waystit',
+                    curiosity: '🕺 Body-based practices meet autonomous sound 🎵\n\nThursday Sonic Somatics at 1000 Ways to Sit. Movement and stillness dialogue with bronze frequencies, $50.\n\nbit.ly/1000waystit',
+                    direct: '🕺 Thursday Sonic Somatics 🕺\n\n1000 Ways to Sit - body-based practices with autonomous sound frequencies, $50.\n\nWho\'s moving? bit.ly/1000waystit'
+                }
+            },
+            'curator-nights': {
+                text: {
+                    testimonial: '"There is nothing else like it" - Saturday Curator Nights at 1000 Ways to Sit. Bay Area artists collaborate with autonomous sound sculptures, $35. 6-9pm meditative hangs. bit.ly/1000waystit',
+                    curiosity: 'Bay Area artists meet autonomous sound... Saturday Curator Nights at 1000 Ways to Sit. Creative community meditative hangs, $35. 6-9pm. bit.ly/1000waystit',
+                    direct: 'Saturday Curator Nights at 1000 Ways to Sit. Artists collaborate with autonomous sound sculptures, $35. 6-9pm. Want to join the creative community? bit.ly/1000waystit'
+                },
+                email: {
+                    testimonial: 'Subject: "There is nothing else like it" - Curator Nights\n\nA visitor\'s response to Saturday Curator Nights at 1000 Ways to Sit. Bay Area artists collaborate with autonomous bronze sculptures in evening gatherings.\n\nMeditative hangs with creative community, $35. 6-9pm.\n\nWould you like to join this unique gathering? bit.ly/1000waystit',
+                    curiosity: 'Subject: Bay Area artists meet autonomous sound\n\nSaturday Curator Nights at 1000 Ways to Sit. Evening gatherings where local artists collaborate with autonomous bronze sculptures.\n\nMeditative hangs with creative community, $35. 6-9pm.\n\nCurious to experience it together? bit.ly/1000waystit',
+                    direct: 'Subject: Saturday Curator Nights invitation\n\nCurator Nights at 1000 Ways to Sit - Bay Area artists collaborating with autonomous sound sculptures. Saturday evenings, $35. 6-9pm.\n\nWant to join the creative community? bit.ly/1000waystit'
+                },
+                social: {
+                    testimonial: '🎨 "There is nothing else like it" 🎨\n\nSaturday Curator Nights at 1000 Ways to Sit. Bay Area artists + autonomous sound sculptures, $35. 6-9pm.\n\n#ArtCommunity #SoundArt #CreativeGathering\nbit.ly/1000waystit',
+                    curiosity: '🎨 Bay Area artists meet autonomous sound 🎵\n\nSaturday Curator Nights at 1000 Ways to Sit. Creative community meditative hangs, $35. 6-9pm.\n\nbit.ly/1000waystit',
+                    direct: '🎨 Saturday Curator Nights 🎨\n\n1000 Ways to Sit - artists + autonomous sound sculptures, $35. 6-9pm.\n\nWho\'s creating? bit.ly/1000waystit'
+                }
+            },
+            'gamelatron-talks': {
+                text: {
+                    testimonial: '"That was transformational" - Monday Gamelatron Talks at 1000 Ways to Sit. Audiobooks and discussion with autonomous bronze frequencies, $35. 6-9pm wisdom literature. bit.ly/1000waystit',
+                    curiosity: 'Wisdom literature meets autonomous sound... Monday Gamelatron Talks at 1000 Ways to Sit. Audiobooks and discussion enhanced by bronze frequencies, $35. 6-9pm. bit.ly/1000waystit',
+                    direct: 'Monday Gamelatron Talks at 1000 Ways to Sit. Audiobooks and discussion with autonomous sound frequencies, $35. 6-9pm. Want to explore wisdom together? bit.ly/1000waystit'
+                },
+                email: {
+                    testimonial: 'Subject: "That was transformational" - Gamelatron Talks\n\nA visitor\'s response to Monday Gamelatron Talks at 1000 Ways to Sit. Audiobooks and discussion enhanced by autonomous bronze frequencies.\n\nWisdom literature within the sonic sanctuary, $35. 6-9pm.\n\nWould you like to explore this together? bit.ly/1000waystit',
+                    curiosity: 'Subject: Wisdom literature meets autonomous sound\n\nMonday Gamelatron Talks at 1000 Ways to Sit. Audiobooks and discussion enhanced by autonomous bronze frequencies creating unique sonic landscapes.\n\nWisdom literature within the sanctuary, $35. 6-9pm.\n\nCurious to experience it together? bit.ly/1000waystit',
+                    direct: 'Subject: Monday Gamelatron Talks invitation\n\nGamelatron Talks at 1000 Ways to Sit - audiobooks and discussion enhanced by autonomous sound frequencies. Monday evenings, $35. 6-9pm.\n\nWant to explore wisdom literature together? bit.ly/1000waystit'
+                },
+                social: {
+                    testimonial: '📚 "That was transformational" 📚\n\nMonday Gamelatron Talks at 1000 Ways to Sit. Audiobooks + discussion with autonomous bronze frequencies, $35. 6-9pm.\n\n#WisdomLiterature #SoundHealing #DeepConversation\nbit.ly/1000waystit',
+                    curiosity: '📚 Wisdom literature meets autonomous sound 🎵\n\nMonday Gamelatron Talks at 1000 Ways to Sit. Audiobooks and discussion enhanced by bronze frequencies, $35. 6-9pm.\n\nbit.ly/1000waystit',
+                    direct: '📚 Monday Gamelatron Talks 📚\n\n1000 Ways to Sit - audiobooks + discussion with autonomous sound frequencies, $35. 6-9pm.\n\nWho\'s listening? bit.ly/1000waystit'
+                }
+            }
+        };
+
+        function openGenerator(experience = null) {
+            document.getElementById('generatorModal').style.display = 'flex';
+            if (experience) {
+                selectExperience(experience);
+            }
+        }
+
+        function closeGenerator() {
+            document.getElementById('generatorModal').style.display = 'none';
+        }
+
+        function selectExperience(experience) {
+            // Clear previous selections
+            document.querySelectorAll('#experienceOptions .generator-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            
+            // Select new experience
+            document.querySelector(`[data-experience="${experience}"]`).classList.add('selected');
+            currentExperience = experience;
+            generateMessage();
+        }
+
+        function selectFormat(format) {
+            document.querySelectorAll('#formatOptions .generator-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            document.querySelector(`[data-format="${format}"]`).classList.add('selected');
+            currentFormat = format;
+            generateMessage();
+        }
+
+        function selectTone(tone) {
+            document.querySelectorAll('#toneOptions .generator-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            document.querySelector(`[data-tone="${tone}"]`).classList.add('selected');
+            currentTone = tone;
+            generateMessage();
+        }
+
+        function generateMessage() {
+            if (!currentExperience) {
+                document.getElementById('generatedMessage').innerHTML = 'Select an experience above to generate your invitation message.';
+                return;
+            }
+
+            const message = messageTemplates[currentExperience][currentFormat][currentTone];
+            document.getElementById('generatedMessage').innerHTML = message;
+        }
+
+        function copyMessage() {
+            const message = document.getElementById('generatedMessage').innerText;
+            navigator.clipboard.writeText(message).then(() => {
+                alert('Message copied to clipboard!');
+            });
+        }
+
+        function generateNew() {
+            generateMessage();
+        }
+
+        function clearGenerator() {
+            // Clear all selections
+            document.querySelectorAll('.generator-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            
+            // Reset to defaults
+            document.querySelector('[data-format="text"]').classList.add('selected');
+            document.querySelector('[data-tone="testimonial"]').classList.add('selected');
+            
+            currentExperience = null;
+            currentFormat = 'text';
+            currentTone = 'testimonial';
+            
+            document.getElementById('generatedMessage').innerHTML = 'Select an experience above to generate your invitation message.';
+        }
+
+        // Event listeners for generator options
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('#experienceOptions .generator-option').forEach(option => {
+                option.addEventListener('click', () => selectExperience(option.dataset.experience));
+            });
+
+            document.querySelectorAll('#formatOptions .generator-option').forEach(option => {
+                option.addEventListener('click', () => selectFormat(option.dataset.format));
+            });
+
+            document.querySelectorAll('#toneOptions .generator-option').forEach(option => {
+                option.addEventListener('click', () => selectTone(option.dataset.tone));
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
